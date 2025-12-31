@@ -1,0 +1,127 @@
+================================================================================
+COMPREHENSIVE EXPLORATORY DATA ANALYSIS REPORT
+================================================================================
+
+Generated on: 2025-12-31 14:37:16
+
+DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Total Records: 6,190
+Total Columns: 21
+Date Range: NaT to NaT
+
+DATA CLEANING SUMMARY
+--------------------------------------------------------------------------------
+Initial Records: 6,190
+Final Records: 6,190
+Records Removed: 0
+Duplicate Rows Removed: 0
+Date Columns Converted: 6
+  - accept_time, time_window_start, time_window_end, pickup_time, pickup_gps_time, accept_gps_time
+
+MISSING VALUES HANDLING
+--------------------------------------------------------------------------------
+pickup_gps_time: Filled with mode (06-07 10:43:00)
+pickup_gps_lng: Filled with median (120.51)
+pickup_gps_lat: Filled with median (31.21)
+accept_gps_time: Filled with mode (06-07 07:48:00)
+accept_gps_lng: Filled with median (121.18)
+accept_gps_lat: Filled with median (31.24)
+
+OUTLIERS DETECTED
+--------------------------------------------------------------------------------
+lng:
+  Count: 2,237 (36.14%)
+  Lower bound: 117.10
+  Upper bound: 124.08
+
+pickup_gps_lng:
+  Count: 1,706 (27.56%)
+  Lower bound: 118.12
+  Upper bound: 123.30
+
+accept_gps_lng:
+  Count: 1,332 (21.52%)
+  Lower bound: 119.19
+  Upper bound: 122.52
+
+accept_gps_lat:
+  Count: 2,832 (45.75%)
+  Lower bound: 31.00
+  Upper bound: 31.53
+
+CITY-WISE DISTRIBUTION
+--------------------------------------------------------------------------------
+yantai         :  1,512 (24.43%)
+chongqing      :  1,470 (23.75%)
+shanghai       :  1,285 (20.76%)
+hangzhou       :  1,156 (18.68%)
+jilin          :    767 (12.39%)
+
+REGION ANALYSIS
+--------------------------------------------------------------------------------
+Total unique regions: 132
+Average customers per region: 46.89
+Median customers per region: 49.00
+Top 10 regions:
+  Region 11: 60 customers
+  Region 16: 60 customers
+  Region 18: 60 customers
+  Region 132: 60 customers
+  Region 118: 60 customers
+  Region 5: 59 customers
+  Region 69: 59 customers
+  Region 97: 59 customers
+  Region 70: 59 customers
+  Region 1: 59 customers
+
+GEOGRAPHIC ANALYSIS
+--------------------------------------------------------------------------------
+Longitude range: 105.911650 to 127.347190
+Latitude range: 28.942820 to 44.426190
+Longitude std: 6.612985
+Latitude std: 4.816477
+
+TIME WINDOW ANALYSIS
+--------------------------------------------------------------------------------
+Average duration: nan hours
+Median duration: nan hours
+Min duration: nan hours
+Max duration: nan hours
+Std duration: nan hours
+
+SUMMARY STATISTICS
+--------------------------------------------------------------------------------
+           order_id    region_id    courier_id          lng          lat        aoi_id     aoi_type  pickup_gps_lng  pickup_gps_lat  accept_gps_lng  accept_gps_lat           ds
+count  6.190000e+03  6190.000000   6190.000000  6190.000000  6190.000000   6190.000000  6190.000000     6190.000000     6190.000000     6190.000000     6190.000000  6190.000000
+mean   3.083296e+06    67.344103   7804.155089   118.284674    33.750025  12226.206624     6.858320      118.842187       33.124202      119.846206       32.990078   562.031341
+std    1.758674e+06    39.828350   4549.180041     6.612985     4.816477   7049.104330     6.286795        5.794568        4.344035        5.023404        4.104708    52.392185
+min    6.020000e+02     0.000000     14.000000   105.911650    28.942820      4.000000     0.000000      105.914170       28.442640      105.909860       28.941340   501.000000
+25%    1.567437e+06    32.000000   3909.000000   119.721190    30.187750   6035.750000     1.000000      120.059933       30.313585      120.440057       31.199417   501.000000
+50%    3.089602e+06    68.500000   7635.000000   120.762880    31.217330  12198.000000     2.000000      120.508665       31.214855      121.176780       31.243920   607.000000
+75%    4.583188e+06   103.000000  11763.000000   121.465872    37.487315  18228.000000    14.000000      121.356390       37.169345      121.273787       31.333488   607.000000
+max    6.161629e+06   134.000000  16043.000000   127.347190    44.426190  24538.000000    14.000000      127.347120       44.426740      127.346770       44.426110   607.000000
+
+COLUMN INFORMATION
+--------------------------------------------------------------------------------
+order_id                 : int64
+region_id                : int64
+city                     : object
+courier_id               : int64
+accept_time              : datetime64[ns]
+time_window_start        : datetime64[ns]
+time_window_end          : datetime64[ns]
+lng                      : float64
+lat                      : float64
+aoi_id                   : int64
+aoi_type                 : int64
+pickup_time              : datetime64[ns]
+pickup_gps_time          : datetime64[ns]
+pickup_gps_lng           : float64
+pickup_gps_lat           : float64
+accept_gps_time          : datetime64[ns]
+accept_gps_lng           : float64
+accept_gps_lat           : float64
+ds                       : int64
+source_city              : object
+time_window_duration     : float64
