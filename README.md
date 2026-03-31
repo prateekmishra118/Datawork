@@ -32,8 +32,8 @@ This repository contains a comprehensive dataset extracted from the LaDe (Last-M
 archive (1)/
 │
 ├── README.md                          # This file
-├── data_cleaning_eda_combined.py      # Main data cleaning and EDA script
-├── EDA_Report_Combined.txt             # Detailed analysis report
+├── data_cleaning_combined.py           # Main data cleaning and analysis script
+├── report_combined.txt                # Detailed analysis report
 │
 ├── cleaned_combined_dataset.xlsx      # Cleaned dataset (main output)
 ├── combined_single_dataset.xlsx       # Combined dataset from all cities
@@ -41,7 +41,7 @@ archive (1)/
 ├── combined_distance_matrices.xlsx    # Combined distance matrices
 ├── combined_adjacency_matrices.xlsx    # Combined precedence constraint matrices
 │
-├── eda_plots/                         # Visualization directory
+├── plots/                             # Visualization directory
 │   ├── 01_city_distribution.png
 │   ├── 02_geographic_distribution.png
 │   ├── 04_region_distribution.png
@@ -141,7 +141,7 @@ archive (1)/
 
 ## 📊 Visualizations
 
-The `eda_plots/` directory contains 7 high-resolution visualizations (300 DPI):
+The `plots/` directory contains 7 high-resolution visualizations (300 DPI):
 
 1. **City Distribution** - Bar chart showing customer distribution across cities
 2. **Geographic Distribution** - Scatter plot of customer locations by city
@@ -153,10 +153,10 @@ The `eda_plots/` directory contains 7 high-resolution visualizations (300 DPI):
 
 ## 🚀 Usage
 
-### Running the Data Cleaning and EDA Script
+### Running the Data Cleaning Script
 
 ```bash
-python data_cleaning_eda_combined.py
+python data_cleaning_combined.py
 ```
 
 ### Requirements
@@ -173,8 +173,8 @@ openpyxl >= 3.0.0
 
 The script generates:
 1. **cleaned_combined_dataset.xlsx** - Cleaned dataset with summary sheet
-2. **eda_plots/** - Directory containing all visualizations
-3. **EDA_Report_Combined.txt** - Comprehensive text report
+2. **plots/** - Directory containing all visualizations
+3. **report_combined.txt** - Comprehensive text report
 
 ## 📋 Matrix Files
 
