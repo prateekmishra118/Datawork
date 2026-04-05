@@ -1,3 +1,9 @@
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3500&pause=1200&color=58A6FF&center=true&vCenter=true&multiline=true&width=650&height=100&lines=Welcome+to+my+GitHub!;Data+science+%E2%80%A2+Last-mile+delivery+%E2%80%A2+EDA)](https://github.com/prateekmishra118)
+
+</div>
+
 Datascience Work
 # Last-Mile Delivery Dataset - Data Cleaning & Exploratory Data Analysis
 
